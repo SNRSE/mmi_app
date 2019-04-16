@@ -17,7 +17,7 @@ function clickPHPtoJS(event){
         // Minimal:-)
 		$daten = { "function" : "get_version"};
    $.ajax({
-        url: "backend.php",
+        url: "Backend.php",
 		type: "POST",
 		data:$daten,
         success: function(data) { clickPHPtoJSResponse(data); }
