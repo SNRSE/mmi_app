@@ -9,31 +9,32 @@
 <meta name="apple-mobile-web-app-title" content="FFF">
 <meta name="msapplication-starturl" content="/">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-</head>
-<body>
-    
-    
-    
-    Dies ist eine Test App
-    
-    <script>
-    // This is the "Offline copy of pages" service worker
-
-// Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
-
-// Check compatibility for the browser we're running this in
-if ("serviceWorker" in navigator) {
-  if (navigator.serviceWorker.controller) {
-    console.log("[PWA Builder] active service worker found, no need to register");
-  } else {
-    // Register the service worker
-    navigator.serviceWorker
-      .register("pwabuilder-sw.js", {
-        scope: "./"
-      })
-      .then(function (reg) {
-        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
-      });
-  }
-}</script>
-    </body></html>
+    <meta charset="utf-8" />
+    <title>AxxG - AJAX Beispiel</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script type="text/javascript">
+function clickPHPtoJS(event){
+        // Minimal:-)
+		$daten = { "function" : "get_version"};
+   $.ajax({
+        url: "backend.php",
+		type: "POST",
+		data:$daten,
+        success: function(data) { clickPHPtoJSResponse(data); }
+   });
+}
+ 
+function clickPHPtoJSResponse(data) {
+   // Antwort des Server ggf. verarbeiten
+   var response = $.parseJSON(data);
+   var nummer = response.nr;
+   var blog = response.blog;
+   alert("Mein Ergebnis bei AxxG-AJAX: " + nummer);
+   alert("Mein Ergebnis bei AxxG-AJAX: " + blog);
+}
+    </script>
+  </head>
+  <body>
+    <button type="button" id="myClickBtn" onclick="clickPHPtoJS(event)">go!</button> 
+  </body>
+</html>
