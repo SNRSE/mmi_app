@@ -27,10 +27,8 @@ function clickPHPtoJS(event){
 function clickPHPtoJSResponse(data) {
    // Antwort des Server ggf. verarbeiten
    var response = $.parseJSON(data);
-   var nummer = response.nr;
-   var blog = response.blog;
+   var nummer = response.version;
    alert("Mein Ergebnis bei AxxG-AJAX: " + nummer);
-   alert("Mein Ergebnis bei AxxG-AJAX: " + blog);
 }
     </script>
   </head>
