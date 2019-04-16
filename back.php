@@ -4,10 +4,8 @@
 $auth = true;
 if($auth == true) {
  if (function_exists($function)== true){
-	 echo("hi");
  $response = $function($data);
  } else{
-	 echo("false");
 	 $response = array (
 						"sucess" => false,
 						"error"  => "Funktion does not exist");}
