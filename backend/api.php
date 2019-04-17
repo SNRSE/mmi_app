@@ -1,5 +1,5 @@
 <?php
- $function = $_POST["funktion"];
+ $function = $_POST["function"];
  $data = $_POST["data"];
 $auth = true;
 if($auth == true) {
