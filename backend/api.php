@@ -16,7 +16,7 @@ if($auth == true) {
 }
 // codieren der Daten
 echo(json_encode($response));
- function get_version(){
+ function get_version($fdata){
 	 $response = array (
 						"sucess" => true,
 						"version"  => "0.1");
