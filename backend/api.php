@@ -6,9 +6,10 @@ if($auth == true) {
  if (function_exists($function)== true){
  $response = $function($data);
  } else{
+     $er = "Funktion does not exist" + $function
 	 $response = array (
 						"sucess" => false,
-						"error"  => "Funktion does not exist");}
+						"error"  => $er);}
 }else{
 	$response = array (
 						"sucess" => false,
