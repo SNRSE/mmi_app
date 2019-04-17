@@ -20,5 +20,6 @@ echo(json_encode($response));
 	 $response = array (
 						"sucess" => true,
 						"version"  => "0.1");
+     return($response);
  }
 ?>
