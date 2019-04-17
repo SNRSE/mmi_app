@@ -17,6 +17,6 @@ function call_server_demo(call_function,data){
         url: "/backend/api.php",
 		type: "POST",
 		data:daten,
-        success: function(data) { return(data); }
+        success: function(data) { alert(data); }
    });
 }
