@@ -17,8 +17,8 @@ function clickPHPtoJSResponse(data) {
    alert("Mein Ergebnis bei AxxG-AJAX: " + nummer);
 }
 $(document).ready(function () {
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').toggleClass('active');
-        $(this).toggleClass('active');
-    });
+   $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+});
 });
