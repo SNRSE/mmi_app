@@ -25,15 +25,14 @@ echo(json_encode($response));
      return($response);
  }
  function get_userdata($fdata){
-	 $response = array (
-						"sucess" => true,
-                        "id"  => "1",
-						"username"  => "Max",
-                        "name"  => "Max Musterman",
-                        "alter"  => "13",
-                        "ort"  => "Metzingen",
-                        "punkte"  => "120"
-     );
+     $data = json_decode($fdata);
+     $users = array( 
+        "0"=> array ("sucess" => true,"id"  => "0","username"  => "Max","name"  => "Max Musterman","alter"  => "13",
+                     "ort"  => "Metzingen", "punkte"  => "120"
+     ), "1" =>array ("sucess" => true,"id"  => "1","username"  => "Jane","name"  => "Jonas ","alter"  => "13",
+                     "ort"  => "Metzingen", "punkte"  => "123"
+     ) )
+	 $response = $users["1"];
      return($response);
  }
 ?>

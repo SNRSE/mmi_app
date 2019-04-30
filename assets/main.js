@@ -1,13 +1,24 @@
-function get_data(call_function,data,response_func){
-    var daten = {"function": call_function,"data":data};
-    $.ajax({
-        url: "/backend/api.php",
+function clickPHPtoJS(event){
+        // Minimal:-)
+		$daten = { "function" : "get_version"};
+   $.ajax({
+        url: "/back/api.php",
 		type: "POST",
-		data:daten,
-        success: function(data) { response_func(data); }
+		data:$daten,
+        success: function(data) { clickPHPtoJSResponse(data); }
    });
 }
-function log_response(data){
-    var response = $.parseJSON(data);
-    console.log(response);
+ 
+function clickPHPtoJSResponse(data) {
+   // Antwort des Server ggf. verarbeiten
+   var response = $.parseJSON(data);
+   var nummer = response.version;
+   console.log(response);
+   alert("Mein Ergebnis bei AxxG-AJAX: " + nummer);
 }
+$(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
+    });
+});
