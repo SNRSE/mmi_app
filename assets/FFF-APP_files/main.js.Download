@@ -1,0 +1,64 @@
+/*function clickPHPtoJS(event){
+        // Minimal:-)
+		$daten = { "function" : "get_version"};
+   $.ajax({
+        url: "/back/api.php",
+		type: "POST",
+		data:$daten,
+        success: function(data) { clickPHPtoJSResponse(data); }
+   });
+}
+ 
+function clickPHPtoJSResponse(data) {
+   // Antwort des Server ggf. verarbeiten
+   var response = $.parseJSON(data);
+   var nummer = response.version;
+   console.log(response);
+   alert("Mein Ergebnis bei AxxG-AJAX: " + nummer);
+}*/
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++)
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam)
+        {
+            return sParameterName[1];
+        }
+    }
+}
+
+$(document).ready(function () {
+    if(typeof GetURLParameter("page") === 'undefined'){
+        showpage("home");
+    }else{
+        
+            showpage(GetURLParameter("page"));
+        }
+    $(".replace").each(function(){
+                        console.log(this);
+                       })
+        
+    });
+function showpage (page){
+    switch(page){
+        case "home":
+            $("#result").empty;
+            $("#result").load("sites/new.html");
+            break;
+        case "event":
+            break;
+        case "action":
+            break;
+        case "profile":
+            break;
+        case "qr":
+            break;
+        default:
+            console.log("Page does not exist");
+            $("#result").empty;
+            $("#result").load("sites/error404.html");
+    }
+}
