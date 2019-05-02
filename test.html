@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Instascan</title>
+  </head>
+  <body>
+    <video id="pre"></video>
+    <script type="module">
+    import QrScanner from '/qr-scanner.min.js';
+            
+QrScanner.WORKER_PATH = '/qr-scanner-worker.min.js';
+        var videoElem = document.getElementById("pre");
+     const qrScanner = new QrScanner(videoElem, result => console.log('decoded qr code:', result));   
+</script>
+  </body>
+</html>
