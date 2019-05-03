@@ -91,27 +91,27 @@ function showpage(page) {
     switch (page) {
         case "home":
             $("#result").empty;
-            $("#result").load("sites/home.html", replaceplacehodler());
+            $("#result").load("sites/Home.html", replaceplacehodler());
             break;
         case "event":
             $("#result").empty;
-            $("#result").load("sites/event.html", replaceplacehodler());
+            $("#result").load("sites/Event.html", replaceplacehodler());
             break;
         case "action":
             $("#result").empty;
-            $("#result").load("sites/action.html", replaceplacehodler());
+            $("#result").load("sites/Action.html", replaceplacehodler());
             break;
         case "profile":
             $("#result").empty;
-            $("#result").load("sites/profile.html", replaceplacehodler());
+            $("#result").load("sites/Profile.html", replaceplacehodler());
             break;
         case "qr":
             $("#result").empty;
-            $("#result").load("sites/qr.html", replaceplacehodler());
+            $("#result").load("sites/Qr.html", replaceplacehodler());
             break;
         default:
             console.log("Page does not exist");
             $("#result").empty;
-            $("#result").load("sites/error404.html");
+            $("#result").load("sites/Error404.html");
     }
 }
