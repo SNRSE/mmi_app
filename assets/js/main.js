@@ -20,7 +20,7 @@ function clickPHPtoJSResponse(data) {
 //Globale Variablen
 var placeholder = {};
 var pageid = 0
-placeholder["username"] = "Jonas 2";
+placeholder["username"] = " Jonas 2";
 
 
 function GetURLParameter(sParam) {

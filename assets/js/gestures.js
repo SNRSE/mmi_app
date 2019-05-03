@@ -3,7 +3,7 @@ var myElement = document.getElementById('result');
 // create a simple instance
 // by default, it only adds horizontal recognizers
 var mc = new Hammer(myElement);
-mc.get('pan').set({ threshold:100 });
+mc.get('pan').set({ threshold:500 });
 // listen to events...
 mc.on("panleft", function(ev) {
     pageid = pageid + 1;
