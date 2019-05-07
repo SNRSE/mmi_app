@@ -42,19 +42,6 @@ $(document).ready(function () {
     }
     
         $("#nav_test").load("nav/mobile.html")
-    
-    $("#home").click(function () {
-        showpage("home");
-    })
-    $("#event").click(function () {
-        showpage("event");
-    })
-    $("#action").click(function () {
-        showpage("action");
-    })
-    $("#profile").click(function () {
-        showpage("profile");
-    })
 
 });
 
