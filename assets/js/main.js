@@ -41,7 +41,7 @@ $(document).ready(function () {
     } else {showpage(GetURLParameter("page"));
     }
     if (/Mobi|Android/i.test(navigator.userAgent)) {
-        $("#nav").load("nav/mobile.html")
+        $("#nav-test").load("nav/mobile.html")
 }
     
     $("#home").click(function () {
