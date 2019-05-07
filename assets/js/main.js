@@ -40,9 +40,8 @@ $(document).ready(function () {
         showpage("home");
     } else {showpage(GetURLParameter("page"));
     }
-    if (/Mobi|Android/i.test(navigator.userAgent)) {
+    
         $("#nav-test").load("nav/mobile.html")
-}
     
     $("#home").click(function () {
         showpage("home");
