@@ -41,7 +41,7 @@ $(document).ready(function () {
     } else {showpage(GetURLParameter("page"));
     }
     
-        $("#nav_test").load("nav/mobile.html")
+        $("#nav_test").load("nav/mobile.html",alert("test"))
     
     $("#home").click(function () {
         showpage("home");
