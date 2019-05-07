@@ -35,12 +35,15 @@ function GetURLParameter(sParam) {
 }
 
 $(document).ready(function () {
+    
     if (typeof GetURLParameter("page") === 'undefined') {
         showpage("home");
-    } else {
-
-        showpage(GetURLParameter("page"));
+    } else {showpage(GetURLParameter("page"));
     }
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+        $("#nav").load("nav/mobile.html")
+}
+    
     $("#home").click(function () {
         showpage("home");
     })
