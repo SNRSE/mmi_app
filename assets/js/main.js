@@ -1,3 +1,5 @@
+var today = new Date();
+
 function load2(url) {
     $.ajax({
         url: url,
@@ -54,7 +56,7 @@ function showpage(page) {
             load2("sites/Home.html");
             break;
         case "event":
-            load2("sites/Event.html");
+            load2("sites/Event.html"+"?test=hallo");
             break;
         case "action":
             load2("sites/Action.html");
