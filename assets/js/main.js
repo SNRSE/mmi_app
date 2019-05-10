@@ -70,7 +70,7 @@ function showpage(page) {
             load2("sites/Profile.html");
             break;
         case "qr":
-            load2("sites/Qr.html");
+            load2("sites/qr.html");
             break;
         default:
             console.log("Page does not exist");
