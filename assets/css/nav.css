@@ -1,6 +1,7 @@
 body{
     background-image: url(/assets/images/tinte.jpg);
     background-attachment: fixed;
+    background-size: cover;
 }
 .biggernav{
     font-size: 30px;
