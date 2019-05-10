@@ -19,7 +19,14 @@ var placeholder = {};
 var pageid = 0
 placeholder["username"] = " Jonas 2";
 
-
+function isMobile() {
+ try {
+    if(/Android|webOS|iPhone|iPad|iPod|pocket|psp|kindle|avantgo|blazer|midori|Tablet|Palm|maemo|plucker|phone|BlackBerry|symbian|IEMobile|mobile|ZuneWP7|Windows Phone|Opera Mini/i.test(navigator.userAgent)) {
+     return true;
+    };
+    return false;
+ } catch(e){ console.log("Error in isMobile"); return false; }
+}
 function GetURLParameter(sParam) {
     var sPageURL = window.location.search.substring(1);
     var sURLVariables = sPageURL.split('&');
@@ -42,8 +49,12 @@ $(document).ready(function () {
         $('#modalLoginForm').modal('show');
         localStorage['userid'] = 1;
     }
+    if(isMobile){
+        alert("Du Bist Mobil");
+    }
     
-    $("#nav_test").load("nav/mobile.html")
+    $("#nav_test").load("nav/mobile.html");
+    
 
 });
 
