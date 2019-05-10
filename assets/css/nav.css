@@ -9,11 +9,9 @@ body{
     /*background: linear-gradient(0deg, rgba(255,0,255,1) 30%, rgba(255,255,255,0) 30%);*/
     background-color: #CDF2A7;
     background-attachment: fixed;
-    padding: 0 10px;
-
 }
 .selicon{
-    color: chocolate;
+    color: #3C7306;
 }
 .icon a {
     color: black;
