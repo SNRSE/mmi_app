@@ -49,7 +49,7 @@ $(document).ready(function () {
         $('#modalLoginForm').modal('show');
         localStorage['userid'] = 1;
     }
-    if(isMobile){
+    if(isMobile()){
         alert("Du Bist Mobil");
     }
     
