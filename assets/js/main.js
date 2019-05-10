@@ -37,8 +37,13 @@ $(document).ready(function () {
         showpage("home");
     } else {showpage(GetURLParameter("page"));
     }
+    var userid = localStorage['userid'];
+    if (!userid) {
+        $('#modalLoginForm').modal('show');
+        localStorage['userid'] = 1;
+    }
     
-        $("#nav_test").load("nav/mobile.html")
+    $("#nav_test").load("nav/mobile.html")
 
 });
 

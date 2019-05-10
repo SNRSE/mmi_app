@@ -1,11 +1,13 @@
 body{
-    background-color: yellowgreen;
+    background-image: url(/assets/images/26526562-gr%C3%BCne-tinte-im-wasser-isoliert-auf-wei%C3%9F.jpg);
+    background-attachment: fixed;
 }
 .biggernav{
     font-size: 30px;
     color: black;
     /*background: linear-gradient(0deg, rgba(255,0,255,1) 30%, rgba(255,255,255,0) 30%);*/
     background-color: beige;
+    background-attachment: fixed;
 
 }
 .selicon{
