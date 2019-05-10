@@ -49,12 +49,12 @@ $(document).ready(function () {
         $('#modalLoginForm').modal('show');
         localStorage['userid'] = 1;
     }
-    if(isMobile){
-        alert("Du Bist Mobil");
-    }
+    if(!isMobile()){
+        $("#nav_test").load("nav/pc.html")
+    }else{
     
     $("#nav_test").load("nav/mobile.html");
-    
+    }
 
 });
 
