@@ -41,9 +41,8 @@ $(document).ready(function () {
     } else {showpage(GetURLParameter("page"));
     }
     var userid = localStorage['userid'];
-     $("#nav_test").load("nav/mobile.html");
         if(!isMobile()){
-            alert("pc");
+             $("#nav_test").load("nav/pc.html");
         }else{
             $("#nav_test").load("nav/mobile.html");
         }
