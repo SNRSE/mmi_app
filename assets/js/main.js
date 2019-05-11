@@ -42,7 +42,7 @@ $(document).ready(function () {
     }
     var userid = localStorage['userid'];
      $("#nav_test").load("nav/mobile.html");
-        alert(isMobile);
+        alert(isMobile());
 });
 
 function replaceplacehodler() {
