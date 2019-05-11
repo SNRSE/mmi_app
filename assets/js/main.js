@@ -45,7 +45,7 @@ $(document).ready(function () {
         if(!isMobile()){
             alert("pc");
         }else{
-            alert("mobile");
+            $("#nav_test").load("nav/mobile.html");
         }
 });
 
