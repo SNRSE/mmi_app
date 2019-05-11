@@ -41,10 +41,6 @@ $(document).ready(function () {
     } else {showpage(GetURLParameter("page"));
     }
     var userid = localStorage['userid'];
-    if (!userid) {
-        $('#modalLoginForm').modal('show');
-        localStorage['userid'] = 1;
-    }
     if(!isMobile()){
         $("#nav_test").load("nav/pc.html")
     }else{
