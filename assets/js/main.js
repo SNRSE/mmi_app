@@ -20,9 +20,9 @@ var pageid = 0
 placeholder["username"] = " Jonas 2";
 
 function isMobile() {
- return true;
- 
- }
+  try{ document.createEvent("TouchEvent"); return true; }
+  catch(e){ return false; }
+}
 function GetURLParameter(sParam) {
     var sPageURL = window.location.search.substring(1);
     var sURLVariables = sPageURL.split('&');
@@ -42,7 +42,7 @@ $(document).ready(function () {
     }
     var userid = localStorage['userid'];
      $("#nav_test").load("nav/mobile.html");
-
+        alert(isMobile);
 });
 
 function replaceplacehodler() {
