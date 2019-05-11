@@ -1,6 +1,14 @@
-<div class="navbar fixed-bottom navbar-dark biggernav">
-        <div><a href="#"><i class="fas fa-home" id="home"onclick='showpage("home")'></i></a></div>
-        <div><i class="far fa-calendar-alt" id="event"onclick='showpage("event")'></i></div>
-        <div><i class="fas fa-list" id="actions" onclick='showpage("action")'></i></div>
-        <div><i class="fas fa-user" id="profile" onclick='showpage("profile")'></i></div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#" id="home"  onclick='showpage("home")'><i class="fas fa-home" ></i>Home</a>
+      <a class="nav-item nav-link" href="#" id="event" onclick='showpage("event")'><i class="far fa-calendar" ></i>Event</a>
+      <a class="nav-item nav-link" href="#" id="actions" onclick='showpage("action")'><i class="fas fa-list" ></i>Action</a>
+      <a class="nav-item nav-link" href="#" id="profile" onclick='showpage("profile")'><i class="fas fa-user" ></i>Profile</a>
     </div>
+  </div>
+</nav>
