@@ -72,91 +72,91 @@
             <div class="card">
                 <div class="card-header">
                     <h5 class="card-title">Demo in Reutlingen <i class="far fa-heart"></i></h5>
-                <div class="card-body">
-                    <p class="card-text">24. Mai, 11:00 Uhr, Rathaus</p>
-                    <a href="#" class="btn btn-primary">Mitmachen</a>
+                    <div class="card-body">
+                        <p class="card-text">24. Mai, 11:00 Uhr, Rathaus</p>
+                        <a href="#" class="btn btn-primary">Mitmachen</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/assets/images/demo_berlin.jpg" class="card-img-aside" alt="Bild von einer Demonstration in Berlin">
+                    <div class="card-body">
+                        <h5 class="card-title">Demo in Berlin <i class="far fa-heart"></i></h5>
+                        <p class="card-text">24. Mai, 12:00 Uhr, Brandenburger Tor</p>
+                        <a href="#" class="btn btn-primary">Mitmachen</a>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="/assets/images/demo_berlin.jpg" class="card-img-aside" alt="Bild von einer Demonstration in Berlin">
-                <div class="card-body">
-                    <h5 class="card-title">Demo in Berlin <i class="far fa-heart"></i></h5>
-                    <p class="card-text">24. Mai, 12:00 Uhr, Brandenburger Tor</p>
-                    <a href="#" class="btn btn-primary">Mitmachen</a>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Demo in abc <i class="far fa-heart"></i></h5>
+                        <p class="card-text">24. Mai, 11:00 Uhr, Rathaus</p>
+                        <a href="#" class="btn btn-primary">Mitmachen</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Demo in xyz <i class="far fa-heart"></i></h5>
+                        <p class="card-text">24. Mai, 11:00 Uhr, Rathaus</p>
+                        <a href="#" class="btn btn-primary">Mitmachen</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Demo in abc <i class="far fa-heart"></i></h5>
-                    <p class="card-text">24. Mai, 11:00 Uhr, Rathaus</p>
-                    <a href="#" class="btn btn-primary">Mitmachen</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Demo in xyz <i class="far fa-heart"></i></h5>
-                    <p class="card-text">24. Mai, 11:00 Uhr, Rathaus</p>
-                    <a href="#" class="btn btn-primary">Mitmachen</a>
-                </div>
-            </div>
+
+ <!--       <div class="text-center">
+            <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">neue Demo erstellen</a>
         </div>
     </div>
 
-    <div class="text-center">
-        <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">neue Demo erstellen</a>
-    </div>
-</div>
+
+    <div class="modal-body">
+        <h5>Popover in a modal</h5>
+        <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
+        <hr>
+        <h5>Tooltips in a modal</h5>
+        <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+    </div>-->
+
+    <!--erst verfügbar ab Level X-->
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+
+                    <!--Plus Button rechts unten-->
 
 
-<div class="modal-body">
-    <h5>Popover in a modal</h5>
-    <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
-    <hr>
-    <h5>Tooltips in a modal</h5>
-    <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
-</div>
-
-<!--erst verfügbar ab Level X-->
-<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header text-center">
-                
-                <!--Plus Button rechts unten-->
-
-
-       <h4 class="modal-title w-100 font-weight-bold">neue Demo erstellen</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h4 class="modal-title w-100 font-weight-bold">neue Demo erstellen</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-            </div>
-            
-            <!--Symbole für Ort und Zeit einfügen-->
-   <div class="modal-body mx-3">
-                <div class="md-form mb-5">
-                    <i class="fas fa-envelope prefix grey-text"></i>
-                    <input type="text" id="defaultForm-place" class="form-control validate">
-                    <label data-error="wrong" data-success="right" for="defaultForm-email">Ort der Demo</label>
                 </div>
 
-                <div class="md-form mb-4">
-                    <i class="fas fa-lock prefix grey-text"></i>
-                    <input type="date" id="defaultForm-time" class="form-control validate" min='2019-05-10'>
-                    <label data-error="wrong" data-success="right" for="defaultForm-pass">Zeitpunkt</label>
-                </div>
+                <!--Symbole für Ort und Zeit einfügen-->
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input type="text" id="defaultForm-place" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="defaultForm-email">Ort der Demo</label>
+                    </div>
 
-            </div>
-            <div class="modal-footer d-flex justify-content-center">
-                <button type="submit" class="btn btn-default">speichern</button>
+                    <div class="md-form mb-4">
+                        <i class="fas fa-lock prefix grey-text"></i>
+                        <input type="date" id="defaultForm-time" class="form-control validate" min='2019-05-10'>
+                        <label data-error="wrong" data-success="right" for="defaultForm-pass">Zeitpunkt</label>
+                    </div>
+
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="submit" class="btn btn-default">speichern</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
-<script>
-    replaceplacehodler()
+    <script>
+        replaceplacehodler()
 
-</script>
+    </script>
