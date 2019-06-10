@@ -73,64 +73,60 @@
 
 
 <div class="container">
-    <div class="row profile">
-		<div class="col-md-3">
-			<div class="profile-sidebar">
-				<!-- SIDEBAR USERPIC -->
-				<div class="profile-userpic">
-					<img src="http://keenthemes.com/preview/metronic/theme/assets/admin/pages/media/profile/profile_user.jpg" class="img-responsive" alt="">
-				</div>
-				<!-- END SIDEBAR USERPIC -->
-				<!-- SIDEBAR USER TITLE -->
-				<div class="profile-usertitle">
-					<div class="profile-usertitle-name">
-						Marcus Doe
-					</div>
-					<div class="profile-usertitle-job">
-						Developer
-					</div>
-				</div>
-				<!-- END SIDEBAR USER TITLE -->
-				<!-- SIDEBAR BUTTONS -->
-				<div class="profile-userbuttons">
-					<button type="button" class="btn btn-success btn-sm">Follow</button>
-					<button type="button" class="btn btn-danger btn-sm">Message</button>
-				</div>
-				<!-- END SIDEBAR BUTTONS -->
-				<!-- SIDEBAR MENU -->
-				<div class="profile-usermenu">
-					<ul class="nav">
-						<li class="active">
-							<a href="#">
-							<i class="glyphicon glyphicon-home"></i>
-							Overview </a>
-						</li>
-						<li>
-							<a href="#">
-							<i class="glyphicon glyphicon-user"></i>
-							Account Settings </a>
-						</li>
-						<li>
-							<a href="#" target="_blank">
-							<i class="glyphicon glyphicon-ok"></i>
-							Tasks </a>
-						</li>
-						<li>
-							<a href="#">
-							<i class="glyphicon glyphicon-flag"></i>
-							Help </a>
-						</li>
-					</ul>
-				</div>
-				<!-- END MENU -->
-			</div>
+<div class="row">
+<h1>Twitter Profile Card</h1>
+<p>You can use with Twitter API, bot or manual.</p>
+<!-- code start -->
+<div class="twPc-div">
+    <a class="twPc-bg twPc-block"></a>
+
+	<div>
+		<div class="twPc-button">
+            <!-- Twitter Button | you can get from: https://about.twitter.com/tr/resources/buttons#follow -->
+            <a href="https://twitter.com/mertskaplan" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false" data-dnt="true">Follow @mertskaplan</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <!-- Twitter Button -->   
 		</div>
-		<div class="col-md-9">
-            <div class="profile-content">
-			   Some user related content goes here...
-            </div>
+
+		<a title="Mert S. Kaplan" href="https://twitter.com/mertskaplan" class="twPc-avatarLink">
+			<img alt="Mert S. Kaplan" src="https://mertskaplan.com/wp-content/plugins/msk-twprofilecard/img/mertskaplan.jpg" class="twPc-avatarImg">
+		</a>
+
+		<div class="twPc-divUser">
+			<div class="twPc-divName">
+				<a href="https://twitter.com/mertskaplan">Mert S. Kaplan</a>
+			</div>
+			<span>
+				<a href="https://twitter.com/mertskaplan">@<span>mertskaplan</span></a>
+			</span>
+		</div>
+
+		<div class="twPc-divStats">
+			<ul class="twPc-Arrange">
+				<li class="twPc-ArrangeSizeFit">
+					<a href="https://twitter.com/mertskaplan" title="9.840 Tweet">
+						<span class="twPc-StatLabel twPc-block">Tweets</span>
+						<span class="twPc-StatValue">9.840</span>
+					</a>
+				</li>
+				<li class="twPc-ArrangeSizeFit">
+					<a href="https://twitter.com/mertskaplan/following" title="885 Following">
+						<span class="twPc-StatLabel twPc-block">Following</span>
+						<span class="twPc-StatValue">885</span>
+					</a>
+				</li>
+				<li class="twPc-ArrangeSizeFit">
+					<a href="https://twitter.com/mertskaplan/followers" title="1.810 Followers">
+						<span class="twPc-StatLabel twPc-block">Followers</span>
+						<span class="twPc-StatValue">1.810</span>
+					</a>
+				</li>
+			</ul>
 		</div>
 	</div>
+</div>
+<!-- code end -->
+</div>
 </div>
 
 <a style="position:absolute;bottom:60px;right:5px;margin:0;padding:5px 3px;" href="#">GO BACK</a>
