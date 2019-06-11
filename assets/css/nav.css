@@ -1,22 +1,25 @@
-body{
+body {
     background-image: url(/assets/images/tinte.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
-.biggernav{
+
+.biggernav {
     font-size: 30px;
     color: black;
     /*background: linear-gradient(0deg, rgba(255,0,255,1) 30%, rgba(255,255,255,0) 30%);*/
     background-color: #CDF2A7;
     background-attachment: fixed;
 }
-.selicon{
+
+.selicon {
     color: #3C7306;
 }
+
 .icon a {
     color: black;
 }
-.content{
+
+.content {
     padding-bottom: 34px;
 }
-
