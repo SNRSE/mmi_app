@@ -62,12 +62,15 @@ function showpage(page) {
             load2("sites/Home.html");
             break;
         case "event":
+            $("#event").css('color', 'red');
             load2("sites/Event.html"+"?test=hallo");
             break;
         case "action":
+            $("#action").css('color', 'red');
             load2("sites/Action.html");
             break;
         case "profile":
+            $("#profile").css('color', 'red');
             load2("sites/Profile.html");
             break;
         case "qr":
