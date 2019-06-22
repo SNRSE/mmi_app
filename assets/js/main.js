@@ -59,17 +59,42 @@ function replaceplacehodler() {
 function showpage(page) {
     switch (page) {
         case "home":
+                        
+            $("#event").css('color', 'black');
+            $("#home").css('color', 'black');
+            $("#actions").css('color', 'black');
+            $("#profile").css('color', 'black');
+            
+            $("#home").css('color', 'red');
             load2("sites/Home.html");
             break;
         case "event":
+            
+            $("#event").css('color', 'black');
+            $("#home").css('color', 'black');
+            $("#actions").css('color', 'black');
+            $("#profile").css('color', 'black');
+            
             $("#event").css('color', 'red');
             load2("sites/Event.html"+"?test=hallo");
             break;
         case "action":
-            $("#action").css('color', 'red');
+                        
+            $("#event").css('color', 'black');
+            $("#home").css('color', 'black');
+            $("#actions").css('color', 'black');
+            $("#profile").css('color', 'black');
+            
+            $("#actions").css('color', 'red');
             load2("sites/Action.html");
             break;
         case "profile":
+                        
+            $("#event").css('color', 'black');
+            $("#home").css('color', 'black');
+            $("#actions").css('color', 'black');
+            $("#profile").css('color', 'black');
+            
             $("#profile").css('color', 'red');
             load2("sites/Profile.html");
             break;
