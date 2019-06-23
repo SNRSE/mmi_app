@@ -4,11 +4,10 @@
     Teilnehmerzahl hochzählen
     Demo ausblenden, sobald sie vorbei ist
     Bilder von der letzten Demo im Hintergrund anzeigen
-    Sternchen zum Markieren/Vormerken von Demos
     Push Mitteilung mit Erinnerung an vorgemerkte Demo-->
 
 <div class="container">
-    <h1> Events</h1>
+    <h5> </h5><br>
     <div class="row">
         <div class="col-12">
             <h2>Demos in deiner Nähe</h2>
@@ -21,39 +20,31 @@
         <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fbootsnipp.com%2Fiframe%2Fb2BWe" class="pull-right" target="_blank">
         </a>
     </p>-->
-
+    <br>
     <div class="row">
         <div class="col">
-            <!--<div class="card">
-                <div class="card-body">
-                    <img src="/assets/images/demo_stuttgart.jpg" class="card-img-right" alt="Bild von einer Demonstration in Stuttgart" height=50px>
-                    <h5 class="card-title">Demo in Stuttgart <i class="far fa-heart"></i></h5>
-                    <p class="card-text">10. Mai, 11:00 Uhr, Rathaus</p>
-                    <a href="#" class="btn btn-primary">Mitmachen</a>
-                </div>
-            </div>-->
-
             <div class="card bg-dark text-black">
-                <img class="card-img" src="/assets/images/demo_stuttgart.jpg" alt="Bild von einer Demonstration in Stuttgart">
+                <img class="card-img" src="/assets/images/DemoStuttgart.png" alt="Bild von einer Demonstration in Stuttgart">
                 <div class="card-img-overlay">
                     <h5 class="card-title">Demo in Stuttgart
                         <a href="#" id="a1"> <i class="far fa-heart" id="i1"></i></a>
                     </h5>
                     <p class="card-text">10. Mai, 11:00 Uhr, Rathaus<br><i class="fas fa-users"></i> 50.862 Teilnehmer</p>
-                    <a href="#" class="btn btn-primary">Mitmachen</a>
+                    <a href="#" class="btn btn-primary" id="demostgt" onclick="myFunction()">Mitmachen</a>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Demo in xxx
+                    <h5 class="card-title">Demo in Hamburg
                         <a href="#" id="a2"> <i class="far fa-heart" id="i2"></i></a>
                     </h5>
-                    <p class="card-text">10. Mai, 13:00 Uhr, Rathaus<br><i class="fas fa-users"></i> 13.131 Teilnehmer</p>
-                    <a href="#" class="btn btn-primary">Mitmachen</a>
+                    <p class="card-text">10. Mai, 09:30 Uhr, Jungfernstieg<br><i class="fas fa-users"></i> 13.131 Teilnehmer</p>
+                    <a href="#" class="btn btn-primary" id="demoxxx" onclick="myFunction()">Mitmachen</a>
                 </div>
             </div>
         </div>
+
         <div class="col">
             <div class="card">
                 <div class="card-body">
@@ -61,23 +52,72 @@
                         <a href="#" id="a3"> <i class="far fa-heart" id="i3"></i></a>
                     </h5>
                     <p class="card-text">10. Mai, 13:00 Uhr, Rathaus<br><i class="fas fa-users"></i> 24.300 Teilnehmer</p>
-                    <a href="#" class="btn btn-primary">Mitmachen</a>
+                    <a href="#" class="btn btn-primary" id="demogoeppingen" onclick="myFunction()">Mitmachen</a>
                 </div>
             </div>
+
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Demo in abc
+                    <h5 class="card-title">Demo in Mülheim
                         <a href="#" id="a4"> <i class="far fa-heart" id="i4"></i></a>
                     </h5>
-                    <p class="card-text">10. Mai, 13:00 Uhr, Rathaus<br><i class="fas fa-users"></i> 5.432 Teilnehmer</p>
-                    <a href="#" class="btn btn-primary">Mitmachen</a>
+                    <p class="card-text">10. Mai, 15:00 Uhr, Kurt-Schumacher-Platz<br><i class="fas fa-users"></i> 5.432 Teilnehmer</p>
+                    <a href="#" class="btn btn-primary" id="demoabc" onclick="myFunction()">Mitmachen</a>
                 </div>
             </div>
         </div>
     </div>
-
+    <br>
     <h3>Demos in nächster Zeit</h3>
     <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Demo in Reutlingen
+                        <a href="#" id="a2"> <i class="far fa-heart" id="i2"></i></a>
+                    </h5>
+                    <p class="card-text">24. Mai, 11:00 Uhr, Marktplatz<br><i class="fas fa-users"></i> 30.186 Teilnehmer</p>
+                    <a href="#" class="btn btn-primary" id="demoxxx" onclick="myFunction()">Mitmachen</a>
+                </div>
+            </div>
+            <div class="card bg-dark text-black">
+                <img class="card-img" src="/assets/images/DemoBerlin.png" alt="Bild von einer Demonstration in Stuttgart">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Demo in Berlin
+                        <a href="#" id="a1"> <i class="far fa-heart" id="i1"></i></a>
+                    </h5>
+                    <p class="card-text">24. Mai, 12:00 Uhr, <br>Brandenburger Tor<br><i class="fas fa-users"></i> 100.867 Teilnehmer</p>
+                    <a href="#" class="btn btn-primary" id="demostgt" onclick="myFunction()">Mitmachen</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Demo in Filderstadt
+                        <a href="#" id="a3"> <i class="far fa-heart" id="i3"></i></a>
+                    </h5>
+                    <p class="card-text">24. Mai, 13:30 Uhr, Bahnhof Bernhausen<br><i class="fas fa-users"></i> 537 Teilnehmer</p>
+                    <a href="#" class="btn btn-primary" id="demogoeppingen" onclick="myFunction()">Mitmachen</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Demo in Tübingen
+                        <a href="#" id="a4"> <i class="far fa-heart" id="i4"></i></a>
+                    </h5>
+                    <p class="card-text">24. Mai, 11:00 Uhr, Uhlandstraße<br><i class="fas fa-users"></i> 5.432 Teilnehmer</p>
+                    <a href="#" class="btn btn-primary" id="demoabc" onclick="myFunction()">Mitmachen</a>
+                </div>
+            </div><br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">neue Demo erstellen</button><br><br>
+        </div>
+    </div>
+
+    <!--<div class="row">
         <div class="col">
             <div class="card">
                 <div class="card-header">
@@ -86,7 +126,7 @@
                     </h5>
                     <div class="card-body">
                         <p class="card-text">24. Mai, 11:00 Uhr, Rathaus<br><i class="fas fa-users"></i> 30.186 Teilnehmer</p>
-                        <a href="#" class="btn btn-primary">Mitmachen</a>
+                        <a href="#" class="btn btn-primary" id="demort" onclick="myFunction()">Mitmachen</a>
                     </div>
                 </div>
                 <div class="card bg-dark text-white">
@@ -97,7 +137,7 @@
                                 <a href="#" id="a6"> <i class="far fa-heart" id="i6"></i></a>
                             </h5>
                             <p class="card-text">24. Mai, 12:00 Uhr, Brandenburger Tor<br><i class="fas fa-users"></i> 100.867 Teilnehmer</p>
-                            <a href="#" class="btn btn-primary">Mitmachen</a>
+                            <a href="#" class="btn btn-primary" id="demober" onclick="myFunction()">Mitmachen</a>
                         </div>
                     </div>
                 </div>
@@ -108,7 +148,7 @@
                                 <a href="#" id="a7"> <i class="far fa-heart" id="i7"></i></a>
                             </h5>
                             <p class="card-text">24. Mai, 11:00 Uhr, Rathaus<br><i class="fas fa-users"></i> 20.001 Teilnehmer</p>
-                            <a href="#" class="btn btn-primary">Mitmachen</a>
+                            <a href="#" class="btn btn-primary" id="demoabc2" onclick="myFunction()">Mitmachen</a>
                         </div>
                     </div>
                     <div class="card">
@@ -117,83 +157,91 @@
                                 <a href="#" id="a8"> <i class="far fa-heart" id="i8"></i></a>
                             </h5>
                             <p class="card-text">24. Mai, 11:00 Uhr, Rathaus<br><i class="fas fa-users"></i> 42.000 Teilnehmer</p>
-                            <a href="#" class="btn btn-primary">Mitmachen</a>
+                            <a href="#" class="btn btn-primary" id="demoxyz" onclick="myFunction()">Mitmachen</a>
                         </div>
-                    </div><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">neue Demo erstellen</button>
+                    </div>
                 </div>
             </div>
-
         </div>
+    </div>-->
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Demo erstellen</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    </div>
-                    <div class="modal-body">
-                        <i class="fas fa-map-marker-alt"></i><label data-error="wrong" data-success="right" for="defaultForm-email" placeholder="Stuttgart"> Ort der Demo</label>
-                        <input type="text" id="defaultForm-place" class="form-control validate">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Demo erstellen</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <i class="fas fa-map-marker-alt"></i><label data-error="wrong" data-success="right" for="defaultForm-email" placeholder="Stuttgart"> Ort der Demo</label>
+                    <input type="text" id="defaultForm-place" class="form-control validate">
 
-                        <br>
-                        <i class="far fa-clock"></i><label data-error="wrong" data-success="right" for="defaultForm-pass"> Zeitpunkt</label>
-                        <input type="date" id="defaultForm-time" class="form-control validate" min='2019-06-12'>
-                        <input type="time" id="appt" name="appt" min="9:00" max="18:00" required>
-                    </div>
+                    <br>
+                    <i class="far fa-clock"></i><label data-error="wrong" data-success="right" for="defaultForm-pass"> Zeitpunkt</label>
+                    <input type="date" id="defaultForm-time" class="form-control validate" min='2019-06-12'>
+                    <input type="time" id="appt" name="appt" min="9:00" max="18:00" required>
+                </div>
 
-                    <!--entweder-->
-                    <div class="container">
-                        <div class="row">
-                            <div class='col-sm-6'>
-                                <div class="form-group">
-                                    <div class='input-group date' id='datetimepicker2'>
-                                        <input type='text' class="form-control" />
-                                        <span class="input-group-addon">
+                <!--entweder-->
+                <div class="container">
+                    <div class="row">
+                        <div class='col-sm-6'>
+                            <div class="form-group">
+                                <div class='input-group date' id='datetimepicker2'>
+                                    <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <script type="text/javascript">
-                                $(function() {
-                                    $('#datetimepicker2').datetimepicker({
-                                        locale: 'ru'
-                                    });
-                                });
-                            </script>
-                        </div>
-                    </div>
-
-                    <!--oder-->
-                    <div style="overflow:hidden;">
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <div id="datetimepicker12"></div>
+                                    </span>
                                 </div>
                             </div>
                         </div>
                         <script type="text/javascript">
                             $(function() {
-                                $('#datetimepicker12').datetimepicker({
-                                    inline: true,
-                                    sideBySide: true
+                                $('#datetimepicker2').datetimepicker({
+                                    locale: 'ru'
                                 });
                             });
+
                         </script>
                     </div>
+                </div>
 
-                    <div class="modal-footer">
-                        <!--                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-                        <button type="button" class="btn btn-primary">Demo speichern</button>
+                <!--oder-->
+                <div style="overflow:hidden;">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div id="datetimepicker12"></div>
+                            </div>
+                        </div>
                     </div>
+                    <script type="text/javascript">
+                        $(function() {
+                            $('#datetimepicker12').datetimepicker({
+                                inline: true,
+                                sideBySide: true
+                            });
+                        });
+
+                    </script>
+                </div>
+
+                <div class="modal-footer">
+                    <!--                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+                    <button type="button" class="btn btn-primary">Demo speichern</button>
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <script>
-            replaceplacehodler()
-        </script>
+    <script>
+        replaceplacehodler()
+
+    </script>
+
+    <script>
+        myFunction()
+
+    </script>

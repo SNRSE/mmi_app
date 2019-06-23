@@ -59,19 +59,53 @@ function replaceplacehodler() {
 function showpage(page) {
     switch (page) {
         case "home":
+                        
+            $("#event").css('color', 'black');
+            $("#home").css('color', 'black');
+            $("#actions").css('color', 'black');
+            $("#profile").css('color', 'black');
+            
+            $("#home").css('color', 'red');
             load2("sites/Home.html");
             break;
         case "event":
+            
+            $("#event").css('color', 'black');
+            $("#home").css('color', 'black');
+            $("#actions").css('color', 'black');
+            $("#profile").css('color', 'black');
+            
+            $("#event").css('color', 'red');
             load2("sites/Event.html"+"?test=hallo");
             break;
         case "action":
+                        
+            $("#event").css('color', 'black');
+            $("#home").css('color', 'black');
+            $("#actions").css('color', 'black');
+            $("#profile").css('color', 'black');
+            
+            $("#actions").css('color', 'red');
             load2("sites/Action.html");
             break;
         case "profile":
+                        
+            $("#event").css('color', 'black');
+            $("#home").css('color', 'black');
+            $("#actions").css('color', 'black');
+            $("#profile").css('color', 'black');
+            
+            $("#profile").css('color', 'red');
             load2("sites/Profile.html");
             break;
         case "qr":
             load2("sites/qr.html");
+            break;
+        case "datenschutz":
+            load2("sites/datenschutz.html");
+            break;
+        case "imp":
+            load2("sites/impresum.html");
             break;
         default:
             console.log("Page does not exist");

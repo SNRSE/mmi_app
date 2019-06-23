@@ -4,7 +4,7 @@
     <script type="text/javascript">
       let scanner = new Instascan.Scanner({ video: document.getElementById('preview'), mirror: false });
       scanner.addListener('scan', function (content) {
-        alert(content);
+        alert("Vielen Dank das du dabei bist /n du hast 30 Punkte erhalten");
       });
       Instascan.Camera.getCameras().then(function (cameras) {
         if (cameras.length > 0) {
