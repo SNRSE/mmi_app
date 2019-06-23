@@ -105,7 +105,7 @@ function showpage(page) {
             load2("sites/datenschutz.html");
             break;
         case "imp":
-            load2("sites/impresum");
+            load2("sites/impresum.html");
             break;
         default:
             console.log("Page does not exist");
