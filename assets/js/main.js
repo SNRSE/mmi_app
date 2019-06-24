@@ -65,7 +65,7 @@ function replaceplacehodler() {
 
 
 function showpage(page) {
-    var farbe = "lightblue";
+    var farbe = "blue";
     switch (page) {
         case "home":
 
