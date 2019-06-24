@@ -8,7 +8,7 @@
         success: function(data) { clickPHPtoJSResponse(data); }
    });
 }
- 
+
 function clickPHPtoJSResponse(data) {
    // Antwort des Server ggf. verarbeiten
    var response = $.parseJSON(data);

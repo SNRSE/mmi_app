@@ -10592,7 +10592,5 @@ if ( !noGlobal ) {
 }
 
 
-
-
 return jQuery;
 } );

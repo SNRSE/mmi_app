@@ -109,6 +109,12 @@ function showpage(page) {
         case "qr":
             load2("sites/qr.html");
             break;
+        case "datenschutz":
+            load2("sites/datenschutz.html");
+            break;
+        case "imp":
+            load2("sites/impresum.html");
+            break;
         default:
             console.log("Page does not exist");
             load2("sites/Error404.html");
