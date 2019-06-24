@@ -5,11 +5,13 @@ function load2(url) {
         url: url,
         cache: false,
         dataType: "html",
-        success: function (data) {loaddata(data);
+        success: function (data) {
+            loaddata(data);
         }
     });
 }
-function loaddata(data){
+
+function loaddata(data) {
     console.log(data);
     $("#result").empty;
     $("#result").html(data);
@@ -20,9 +22,14 @@ var pageid = 0
 placeholder["username"] = " Jonas 2";
 
 function isMobile() {
-  try{ document.createEvent("TouchEvent"); return true; }
-  catch(e){ return false; }
+    try {
+        document.createEvent("TouchEvent");
+        return true;
+    } catch (e) {
+        return false;
+    }
 }
+
 function GetURLParameter(sParam) {
     var sPageURL = window.location.search.substring(1);
     var sURLVariables = sPageURL.split('&');
@@ -35,17 +42,18 @@ function GetURLParameter(sParam) {
 }
 
 $(document).ready(function () {
-    
+
     if (typeof GetURLParameter("page") === 'undefined') {
         showpage("home");
-    } else {showpage(GetURLParameter("page"));
+    } else {
+        showpage(GetURLParameter("page"));
     }
     var userid = localStorage['userid'];
-        if(!isMobile()){
-             $("#nav_test").load("nav/pc.html");
-        }else{
-            $("#nav_test").load("nav/mobile.html");
-        }
+    if (!isMobile()) {
+        $("#nav_test").load("nav/pc.html");
+    } else {
+        $("#nav_test").load("nav/mobile.html");
+    }
 });
 
 function replaceplacehodler() {
@@ -59,42 +67,42 @@ function replaceplacehodler() {
 function showpage(page) {
     switch (page) {
         case "home":
-                        
+
             $("#event").css('color', 'black');
             $("#home").css('color', 'black');
             $("#actions").css('color', 'black');
             $("#profile").css('color', 'black');
-            
+
             $("#home").css('color', 'red');
             load2("sites/Home.html");
             break;
         case "event":
-            
+
             $("#event").css('color', 'black');
             $("#home").css('color', 'black');
             $("#actions").css('color', 'black');
             $("#profile").css('color', 'black');
-            
+
             $("#event").css('color', 'red');
-            load2("sites/Event.html"+"?test=hallo");
+            load2("sites/Event.html" + "?test=hallo");
             break;
         case "action":
-                        
+
             $("#event").css('color', 'black');
             $("#home").css('color', 'black');
             $("#actions").css('color', 'black');
             $("#profile").css('color', 'black');
-            
+
             $("#actions").css('color', 'red');
             load2("sites/Action.html");
             break;
         case "profile":
-                        
+
             $("#event").css('color', 'black');
             $("#home").css('color', 'black');
             $("#actions").css('color', 'black');
             $("#profile").css('color', 'black');
-            
+
             $("#profile").css('color', 'red');
             load2("sites/Profile.html");
             break;
