@@ -12,7 +12,6 @@ function load2(url) {
 }
 
 function loaddata(data) {
-    console.log(data);
     $("#result").empty;
     $("#result").html(data);
 }
@@ -48,7 +47,7 @@ $(document).ready(function () {
     } else {
         showpage(GetURLParameter("page"));
     }
-    var userid = localStorage['userid'];
+    //var userid = localStorage['userid'];
     if (!isMobile()) {
         $("#nav_test").load("nav/pc.html");
     } else {
@@ -57,10 +56,7 @@ $(document).ready(function () {
 });
 
 function replaceplacehodler() {
-    $(".replace").each(function () {
-        var rp = $(this).data("replace-with");
-        $(this).text(placeholder[rp]);
-    })
+   
 }
 
 
