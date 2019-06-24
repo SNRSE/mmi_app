@@ -65,7 +65,7 @@ function replaceplacehodler() {
 
 
 function showpage(page) {
-    var farbe = "dimgrey";
+    var farbe = "dimgrey;
     switch (page) {
         case "home":
 
@@ -74,7 +74,7 @@ function showpage(page) {
             $("#actions").css('color', 'black');
             $("#profile").css('color', 'black');
 
-            $("#home").css('color', 'farbe');
+            $("#home").css('color', farbe);
             load2("sites/Home.html");
             break;
         case "event":
@@ -84,7 +84,7 @@ function showpage(page) {
             $("#actions").css('color', 'black');
             $("#profile").css('color', 'black');
 
-            $("#event").css('color', 'farbe');
+            $("#event").css('color', farbe);
             load2("sites/Event.html" + "?test=hallo");
             break;
         case "action":
@@ -94,7 +94,7 @@ function showpage(page) {
             $("#actions").css('color', 'black');
             $("#profile").css('color', 'black');
 
-            $("#actions").css('color', 'farbe');
+            $("#actions").css('color', farbe);
             load2("sites/Action.html");
             break;
         case "profile":
@@ -104,7 +104,7 @@ function showpage(page) {
             $("#actions").css('color', 'black');
             $("#profile").css('color', 'black');
 
-            $("#profile").css('color', 'farbe');
+            $("#profile").css('color', farbe);
             load2("sites/Profile.html");
             break;
         case "qr":
