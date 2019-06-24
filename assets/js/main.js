@@ -3,7 +3,7 @@ var today = new Date();
 function load2(url) {
     $.ajax({
         url: url,
-        cache: false,
+        cache: true,
         dataType: "html",
         success: function (data) {
             loaddata(data);
@@ -12,7 +12,6 @@ function load2(url) {
 }
 
 function loaddata(data) {
-    console.log(data);
     $("#result").empty;
     $("#result").html(data);
 }
@@ -48,7 +47,7 @@ $(document).ready(function () {
     } else {
         showpage(GetURLParameter("page"));
     }
-    var userid = localStorage['userid'];
+    //var userid = localStorage['userid'];
     if (!isMobile()) {
         $("#nav_test").load("nav/pc.html");
     } else {
@@ -57,14 +56,12 @@ $(document).ready(function () {
 });
 
 function replaceplacehodler() {
-    $(".replace").each(function () {
-        var rp = $(this).data("replace-with");
-        $(this).text(placeholder[rp]);
-    })
+   
 }
 
 
 function showpage(page) {
+    var farbe = "blue";
     switch (page) {
         case "home":
 
@@ -73,7 +70,7 @@ function showpage(page) {
             $("#actions").css('color', 'black');
             $("#profile").css('color', 'black');
 
-            $("#home").css('color', 'red');
+            $("#home").css('color', farbe);
             load2("sites/Home.html");
             break;
         case "event":
@@ -83,7 +80,7 @@ function showpage(page) {
             $("#actions").css('color', 'black');
             $("#profile").css('color', 'black');
 
-            $("#event").css('color', 'red');
+            $("#event").css('color', farbe);
             load2("sites/Event.html" + "?test=hallo");
             break;
         case "action":
@@ -93,7 +90,7 @@ function showpage(page) {
             $("#actions").css('color', 'black');
             $("#profile").css('color', 'black');
 
-            $("#actions").css('color', 'red');
+            $("#actions").css('color', farbe);
             load2("sites/Action.html");
             break;
         case "profile":
@@ -103,7 +100,7 @@ function showpage(page) {
             $("#actions").css('color', 'black');
             $("#profile").css('color', 'black');
 
-            $("#profile").css('color', 'red');
+            $("#profile").css('color', farbe);
             load2("sites/Profile.html");
             break;
         case "qr":
