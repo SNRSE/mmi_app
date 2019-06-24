@@ -3,7 +3,7 @@ var today = new Date();
 function load2(url) {
     $.ajax({
         url: url,
-        cache: false,
+        cache: true,
         dataType: "html",
         success: function (data) {
             loaddata(data);
