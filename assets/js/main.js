@@ -62,8 +62,12 @@ $(document).ready(function () {
 function replaceplacehodler() {
    $("#punkte").text(punkte + " Punkte") ;
     $("#leveltxt").text("Level " + (~~(punkte / 200)+1)) ;
-    $("#progresstext").text(punkte +" von " + level*200 +" Punkten für Level " + (~~(punkte / 200)+2) );
-    $("#bar").text((punkte/(~~(punkte / 200)+2)) + "%" );
+    $("#progresstext").text(punkte +" von " +(~~(punkte / 200)+1)*200 +" Punkten für Level " + (~~(punkte / 200)+2) );
+    
+    var lvl = (~~(punkte / 200)+1)
+    console.log(lvl)
+    console.log(lvl*200)
+    $("#bar").text((punkte/(lvl*200))*100+ "%" );
     var proz = (punkte/(~~(punkte / 200)+2));
     $("#bar").width(proz + "%");
     
