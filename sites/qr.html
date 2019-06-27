@@ -9,6 +9,7 @@
         });
         scanner.addListener('scan', function(content) {
             alert("Vielen Dank das du dabei bist du hast 30 Punkte erhalten");
+            punkteup(30);
         });
         Instascan.Camera.getCameras().then(function(cameras) {
             if (cameras.length > 0) {

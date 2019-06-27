@@ -1,5 +1,6 @@
 var today = new Date();
-
+var punkte = 100;
+var level = 1;
 function load2(url) {
     $.ajax({
         url: url,
@@ -20,6 +21,9 @@ var placeholder = {};
 var pageid = 0
 placeholder["username"] = " Jonas 2";
 
+function punkteup(x){
+    punkte = punkte + x;
+}
 function isMobile() {
     try {
         document.createEvent("TouchEvent");
@@ -56,8 +60,14 @@ $(document).ready(function () {
 });
 
 function replaceplacehodler() {
-   
-}
+   $("#punkte").text(punkte + " Punkte") ;
+    $("#leveltxt").text("Level " + (~~(punkte / 200)+1)) ;
+    $("#progresstext").text(punkte +" von " + level*200 +" Punkten für Level " + (~~(punkte / 200)+2) );
+    $("#bar").text((punkte/(~~(punkte / 200)+2)) + "%" );
+    var proz = (punkte/(~~(punkte / 200)+2));
+    $("#bar").width(proz + "%");
+    
+                            }
 
 
 function showpage(page) {
